@@ -9,10 +9,10 @@ public class HttpRequestHanlderConfig {
 
     HttpReqeustSimpleHandlerRoute r = TioBootServer.me().getHttpReqeustSimpleHandlerRoute();
 
-    // 创建controller
+    // handler
     HelloRequestHandler HelloRequestHandler = new HelloRequestHandler();
 
-    // 添加action
+    // 添加handler
     r.add("/hi", HelloRequestHandler::hi);
     r.add("/hello", HelloRequestHandler::hello);
 
