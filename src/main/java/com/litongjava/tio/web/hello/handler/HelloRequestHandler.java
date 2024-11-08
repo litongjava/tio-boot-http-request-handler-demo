@@ -1,4 +1,4 @@
-package com.litongjava.tio.web.hello;
+package com.litongjava.tio.web.hello.handler;
 import com.litongjava.tio.http.common.HttpRequest;
 import com.litongjava.tio.http.common.HttpResponse;
 import com.litongjava.tio.http.server.util.Resps;

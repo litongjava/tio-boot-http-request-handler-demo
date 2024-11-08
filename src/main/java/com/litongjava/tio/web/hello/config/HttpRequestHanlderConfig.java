@@ -1,13 +1,14 @@
-package com.litongjava.tio.web.hello;
+package com.litongjava.tio.web.hello.config;
 
 import com.litongjava.tio.boot.server.TioBootServer;
-import com.litongjava.tio.http.server.router.HttpReqeustSimpleHandlerRoute;
+import com.litongjava.tio.http.server.router.HttpRequestRouter;
+import com.litongjava.tio.web.hello.handler.HelloRequestHandler;
 
 public class HttpRequestHanlderConfig {
 
   public void config() {
 
-    HttpReqeustSimpleHandlerRoute r = TioBootServer.me().getHttpReqeustSimpleHandlerRoute();
+     HttpRequestRouter r = TioBootServer.me().getRequestRouter();
 
     // handler
     HelloRequestHandler HelloRequestHandler = new HelloRequestHandler();
